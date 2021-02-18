@@ -7,7 +7,7 @@ const express = require('express');
 const server = express();
 
 // connect our server with the website
-const PORT = 3000; //0-65000
+const PORT = process.env.PORT || 3000; //0-65000
 
 // to access static files and folder in the public folder
 server.use(express.static('./public'));
